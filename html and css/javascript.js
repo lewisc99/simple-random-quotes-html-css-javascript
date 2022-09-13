@@ -7,7 +7,14 @@ var buttonClicked = document.getElementById("button-clicked");
 
 buttonClicked.addEventListener("click",() => {
 
+    addPhrase.classList.remove("expecial-caracter");
+
     let randomNumber = Math.floor( Math.random() * phrases.length);
     let chosePhrase = phrases[randomNumber];
+    if (chosePhrase.startsWith("If"))
+    {
+        addPhrase.classList.add("expecial-caracter");
+    }
     addPhrase.innerText = chosePhrase;
 });
+
