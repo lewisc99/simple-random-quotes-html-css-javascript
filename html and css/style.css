@@ -64,3 +64,9 @@
     background-color: rgb(0, 103, 144);
 
  }
+
+ button::after
+ {
+   background-color: rgb(2, 126, 175);
+
+ }
